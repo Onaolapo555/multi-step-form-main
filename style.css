@@ -1,0 +1,1203 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Desktop screen size  */
+
+@media only screen and (min-width: 768px) {
+
+    .mobile-img{
+        display: none;
+    }
+    .desktop-img {
+        display: block;
+        width: 100%;
+        position: absolute;
+    }
+    body {
+        position: relative;
+        background-color: aliceblue;
+        font-family: sans-serif;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    main{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 65rem;
+        height: 38.5rem;
+        background-color: white;
+        border-radius: 10px;
+        max-width: 90%;
+    }
+    .Card-section {
+        position: relative;
+        align-items: center;
+        width: 17.5rem;
+        height: 36rem;
+        justify-content: center;
+        margin: 1rem;
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        display: block;
+        margin-left: 2rem;
+    }
+
+    .step-1::after{
+        content: "STEP 1";
+        position: absolute;
+        margin-left: 1.5rem;
+        top: 1.5rem;
+        width:80px;
+        color: hsl(228, 100%, 84%);
+    }
+    .step-1::before{
+        position: absolute;
+        content: "YOUR INFO";
+        margin-left: 2.5rem;
+        width: 100px;
+        margin-top: 0.7rem;
+        color: white;
+    }
+
+    .step-2::after{
+        position: absolute;
+         content: "STEP 2";
+        margin-left: 1.5rem;
+        top: 6.2rem;
+        width:80px;
+        color: hsl(228, 100%, 84%);
+    }
+     .step-2::before{
+        position: absolute;
+        content: "SELECT PLAN";
+        margin-left: 2.5rem;
+        width: 120px;
+        margin-top: 0.7rem;
+        color: white;
+    }
+
+      .step-3::after{
+        position: absolute;
+         content: "STEP 3";
+        margin-left: 1.5rem;
+        top: 10.9rem;
+        width:80px;
+        color: hsl(228, 100%, 84%);
+
+    }
+     .step-3::before{
+        position: absolute;
+        content: "ADD ONS";
+        margin-left: 2.5rem;
+        width: 80px;
+        margin-top: 0.7rem;
+        color: white;
+    }
+          .step-4::after{
+        position: absolute;
+         content: "STEP 3";
+        margin-left: 1.5rem;
+        top: 15.5rem;
+        width:80px;
+        color: hsl(228, 100%, 84%);
+
+    }
+     .step-4::before{
+        position:absolute;
+        content: "SUMMARY";
+        margin-left: 2.5rem;
+        width: 90px;
+        margin-top: 0.7rem;
+        color: white;
+    }
+
+    .step-1, .step-2, .step-3, .step-4{
+    margin-top: 1.5rem;
+    border: 2px solid white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+}
+.section-1{
+    position: absolute;
+    top: 8%;
+    right: 8rem;
+    display: none;
+}
+.next{
+    position: absolute;
+    bottom: 2rem;
+    right: 8rem;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    background-color: hsl(213, 96%, 18%);
+    cursor: pointer;
+}
+.confirm-button:hover {
+    background-color: rgb(99, 69, 153);
+}
+.go-back {
+    position: absolute;
+    bottom: 3rem;
+    left: 26.5rem;
+    border: none;
+    color: hsl(231, 11%, 63%);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.info-h1{
+    color:  hsl(213, 96%, 18%);
+}
+.info-details{
+    margin-top: 1rem;
+    color:  hsl(231, 11%, 63%);
+}
+#form {
+    margin-top: 2rem;
+}
+.input-name,.input-email,.input-number {
+    margin-top: 2rem;
+    color: hsl(213, 96%, 18%);
+    font-size: 1.2rem;
+}
+#name,#email,#number {
+    margin-top: 0.5rem;
+    width: 33rem;
+    height: 3rem;
+    border-radius: 10px;
+    padding: 1rem;
+    font-weight: bold;
+    border:1px solid hsl(231, 11%, 63%);
+    cursor: pointer;
+     outline: none;
+}
+#name-error,
+#email-error,
+#phone-error {
+    color: red;
+    font-size: 0.8rem;
+    float: right;
+}
+input::placeholder{
+    color: hsl(231, 11%, 63%);
+}
+#form input:focus {
+    border-color: hsl(243, 32%, 47%);
+}
+
+
+/* Section 2 */
+.section-2 {
+    position: absolute;
+    top: 8%;
+    right: 8rem;
+    display: flex;
+    height: 28rem;
+    display: none;
+}
+.section-2 br {
+    display: none;
+}
+.plans {
+    margin-top: 2rem;
+}
+.Arcade,.Advance,.Pro {
+    position: relative;
+    height: 12rem;
+    width: 9rem;
+    margin: 0.5rem;
+    background-color: transparent;
+    border: 1px solid hsl(231, 11%, 63%);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Arcade:hover {
+    border: 1px solid hsl(243, 100%, 62%);
+}
+.Advance:hover {
+    border: 1px solid hsl(243, 100%, 62%);
+}
+.Pro:hover {
+    border: 1px solid hsl(243, 100%, 62%);
+}
+
+.plan-h2 {
+    margin-top: 1rem;
+    color: hsl(213, 96%, 18%);
+    font-size: 2rem;
+}
+.plan-details {
+    margin-top: 1rem;
+    color: hsl(231, 11%, 63%);
+}
+
+
+.plan {
+    position: absolute;
+    left: 1rem;
+}
+.plan span {
+    display: block;
+}
+.plan-name {
+    font-size: large;
+    font-weight: bold;
+    color:  hsl(213, 96%, 18%);
+    text-align: start;
+}
+.price {
+    margin-top: 0.3rem;
+    color:  hsl(231, 11%, 63%);
+    text-align: start;
+    font-weight: bold;
+}
+.free {
+    display: none;
+    color: hsl(213, 96%, 18%);
+    margin-top: 0.3rem;
+}
+#arcade-free, #advance-free, #pro-free {
+    display: none;
+}
+#image-arcade,
+#img-advance,
+#img-pro {
+    position: absolute;
+    top: 10%;
+    left: 1rem;
+}
+
+
+/* Toggle switch button */
+
+.billing-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 1.5rem;
+  background:  hsl(218, 100%, 97%);
+  padding: 15px 16px;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+.toggle-label {
+  color: hsl(213, 96%, 18%);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+/* Hide the checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: hsl(213, 96%, 18%);
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+#monthly-label {
+    font-size: 1rem;
+}
+#yearly-label {
+    font-size: 1rem;
+
+}
+/* Circle inside */
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3.5px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+/* When checked */
+.switch input:checked + .slider {
+  background-color: hsl(213, 96%, 18%);
+}
+
+/* Move the knob */
+.switch input:checked + .slider::before {
+  transform: translateX(24px);
+}
+
+/* Highlight active label */
+.active-label {
+  color: hsl(213, 96%, 18%);
+}
+.inactive-label {
+  color: hsl(231, 11%, 63%);
+}
+
+
+/* Section 3 */
+.section-3 {
+    position: absolute;
+    top: 8%;
+    right: 8rem;
+    display: none;
+}
+.select-addons{
+    margin: 1rem;
+    margin-top: 2rem
+}
+.add-ons-h1 {
+    color: hsl(213, 96%, 18%);
+    font-size: 2rem;
+
+}
+.addons-details {
+    color:  #b8b7b7;
+    margin-bottom: 1.5rem;
+}
+.online-service {
+    margin-top: 1rem;
+    border: 1px solid hsl(231, 11%, 63%);
+    display: flex;
+    height: 5rem;
+    width: 29.5rem;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.online-service:hover {
+    border: 1px solid  hsl(243, 100%, 62%);
+}
+.online-service:has(#checkbox-online:checked) {
+    border: 1px solid  hsl(243, 100%, 62%);
+    background-color:  hsl(218, 100%, 97%);
+}
+.online-service:has(#checkbox-larger:checked) {
+    border: 1px solid  hsl(243, 100%, 62%);
+    background-color:  hsl(218, 100%, 97%);
+}
+.online-service:has(#checkbox-customizable:checked) {
+    border: 1px solid  hsl(243, 100%, 62%);
+    background-color:  hsl(218, 100%, 97%);
+}
+.checkbox {
+    margin-left: 1rem;
+    width: 25px;
+    cursor: pointer;
+}
+.On-serv {
+    align-items: center;
+    margin-left: 1rem;
+    align-content: center;
+}
+.On-serv #span-1{
+    font-size: 1rem;
+    font-weight: bold;
+    color: hsl(213, 96%, 18%);
+}
+.On-serv #span-2 {
+    vertical-align: middle;
+    font-size: 0.9rem;
+    color: #b6b4b4;
+}
+.addons-price {
+    position: absolute;
+    right: 0.5rem;
+    margin-top: 1.5rem;
+    color: hsl(243, 100%, 62%);
+} 
+#span-1{
+    font-weight: bold;
+}
+
+
+/* Section 4 */
+.section-4 {
+    position: absolute;
+    top: 8%;
+    right: 8rem;
+    display: none;
+}
+
+.finishing-up{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 30rem;
+}
+.finish-h2 {
+    color: hsl(213, 96%, 18%);
+
+}
+.finish-details {
+    color:  #b8b7b7;
+    margin-bottom: 1rem;
+}
+.card-details {
+    background-color:   hsl(218, 100%, 97%);
+    height: 13rem;
+    margin-top: 2rem;
+    align-content: center;
+    border-radius: 10px;
+}
+.inner-details{
+    height: 10.5rem;
+    margin-left:1rem;
+    margin-right: 1rem;
+}
+.arcade-change{
+    margin-top: 0.5rem;
+    position: relative;
+    color: hsl(213, 96%, 18%);
+}
+.arcade-change span {
+    right: 0rem;
+    align-content: center;
+    position: absolute;
+    font-weight: bold;
+    top: 30%;
+}
+#link-change{
+    color:  #a1a0a0;
+}
+#link-change:hover {
+    color:  hsl(243, 100%, 62%);
+}
+.online-serv {
+    margin-top: 2rem;
+    color:  #a1a0a0;
+    position: relative;
+}
+.online-serv span {
+    position: absolute;
+    right: 0rem;
+    color: hsl(213, 96%, 18%);
+}
+.large-storage{
+    position: relative;
+    margin-top: 1rem;
+    color:  #a1a0a0;
+}
+.custom-profile{
+    position: relative;
+    margin-top: 1rem;
+    color:  #a1a0a0;
+}
+.custom-profile span {
+    right: 0rem;
+    position: absolute;
+    color: hsl(213, 96%, 18%);
+}
+.large-storage span{
+    right: 0rem;
+    position: absolute;
+    color: hsl(213, 96%, 18%);
+}
+.underline {
+    margin-top: 0.6rem;
+    background-color:  #a1a0a0;
+    height: 1px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+.total {
+    position: relative;
+    margin-left: 1.5rem;
+    margin-right: 2rem;
+    color:  #a1a0a0;
+    margin-top: 1rem;
+}
+.total span {
+    color: hsl(243, 100%, 62%);
+    position: absolute;
+    right: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Section-5 */
+.section-5 {
+    position: absolute;
+    top: 8%;
+    right: 8rem;
+    display: none;
+   
+}
+.message-page {
+    width: 30rem;
+    height: 15rem;
+    margin-top: 8rem;
+    text-align: center;
+}
+
+.message-page h1 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    color: hsl(213, 96%, 18%);
+}
+.message-page p {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #b6b4b4;
+}
+
+
+.nav-bar {
+  justify-content: space-between;
+  align-items: center;
+  background: none; 
+}
+
+.nav-bar .step-1,
+.nav-bar .step-2,
+.nav-bar .step-3,
+.nav-bar .step-4 {
+  align-items: center;
+  justify-content: cente;
+  font-weight: bold;
+  color:white; 
+  background-color: transparent; 
+  border: 1.5px solid  hsl(229, 24%, 87%); 
+  transition: all 0.3s ease; 
+}
+
+.nav-bar .step-1.active,
+.nav-bar .step-2.active,
+.nav-bar .step-3.active,
+.nav-bar .step-4.active {
+  background-color:  hsl(206, 94%, 87%); 
+  color:  hsl(231, 69%, 60%); 
+  border: none;
+}
+
+
+.attribution {
+    position: relative;
+    top: 1rem;
+    margin: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    color: #aea3a3;
+}
+.coder{
+    display: block;
+}
+
+.coder img{
+    border-radius: 50%;
+}
+
+
+}
+
+
+
+
+
+
+/* mobile design views  */
+@media only screen and (max-width: 767px) {
+    
+body{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: aliceblue;
+    font-family: sans-serif;
+
+}
+main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.Card-section{
+    position: fixed;
+    width: 100%;
+}
+
+.Card-section img {
+    width: 100%;
+}
+.mobile-img {
+    display: block;
+}
+.desktop-img {
+    display: none;
+}
+nav{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 2rem;
+}
+.step-1, .step-2, .step-3, .step-4{
+    border: 2px solid white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* section 1 */
+.section-1{
+    position: absolute;
+    top: 8rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 400px;
+    border-radius: 10px;
+    background-color: white;
+    display: none;
+}
+.personal-info{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+.info-h1 {
+    color:  hsl(213, 96%, 18%);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.info-details {
+    color: #b8b7b7;
+}
+form{
+    margin-top: 2rem;
+}
+.input-name,
+.input-email,
+.input-number {
+    margin-top: 1rem;
+    font-weight: bold;
+    color:  hsl(243, 32%, 47%);
+}
+#name,
+#email,
+#number{
+    width: 100%;
+    height: 2rem;
+    margin-top: 0.3rem;
+    border: 1px solid #aea3a3;
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: none;
+}
+
+#form input:focus {
+    border-color: hsl(243, 32%, 47%);
+}
+#name-error,
+#email-error,
+#phone-error {
+    color: red;
+    font-size: 0.8rem;
+    float: right;
+}
+input::placeholder{
+    font-weight: bold;
+    text-indent: 10px;
+}
+footer{
+    background-color: white;
+     position: absolute;
+    bottom: 0rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: rem;
+}
+.button-back-next {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: none;
+}
+.go-back{
+    margin-left: 1rem;
+    border: none;
+    font-weight: bold;
+    color:  #aea3a3;
+    background-color: none;
+    display: none;
+    cursor: pointer;
+}
+.next{
+    margin-right: 2rem;
+    border: none;
+    font-weight: bold;
+    color: white;
+    height: 3rem;
+    width: 6rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color:  hsl(213, 96%, 18%);
+}
+
+
+/* Section 2 */
+.section-2 {
+    position: absolute;
+    top: 5.5rem;
+    border-radius: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 650px;
+    background-color: white;
+    display: none;
+}
+.select-plan{
+    margin: 1rem;
+}
+.plan-h2 {
+    color: hsl(213, 96%, 18%);
+    margin-bottom: 1rem;
+}
+.plan-details {
+    color: #b8b7b7;
+}
+.Arcade,
+ .Advance,
+  .Pro{
+    margin-top: 0.5rem;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    height: 120px;
+    border-radius: 10px;
+    border: 1px solid #b6b4b4;
+    background-color: transparent;
+}
+.plan{
+    display: grid;
+    align-items: start;
+    position: relative;
+}
+.price {
+    margin-top: 0.2rem;
+    text-align: start;
+    color: #aea3a3;
+    display: none;
+    font-size: 1rem;
+}
+.plan-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: start;
+    color: hsl(213, 96%, 18%);
+}
+
+.Arcade div {
+    margin-left: 1rem;
+}
+.Advance div {
+    margin-left: 1rem;
+}
+.Pro div {
+    margin-left: 1rem;
+}
+
+.free {
+    text-align: start;
+    color: hsl(213, 96%, 18%);
+    margin-top: 0.2rem;
+    display: none;
+}
+/* Toggle switch button */
+
+.billing-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 1.5rem;
+  background: #f8f9fe;
+  padding: 15px 16px;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+.toggle-label {
+  color: hsl(213, 96%, 18%);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* The switch container */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+/* Hide the checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: hsl(213, 96%, 18%);
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+#monthly-label {
+    font-size: 1rem;
+}
+#yearly-label {
+    font-size: 1rem;
+
+}
+/* Circle inside */
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3.5px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+/* When checked */
+.switch input:checked + .slider {
+  background-color: hsl(213, 96%, 18%);
+}
+
+/* Move the knob */
+.switch input:checked + .slider::before {
+  transform: translateX(24px);
+}
+
+/* Highlight active label */
+.active-label {
+  color: hsl(213, 96%, 18%);
+}
+.inactive-label {
+  color: hsl(231, 11%, 63%);
+}
+
+
+/* Section 3 */
+.section-3 {
+    position: absolute;
+    top: 8rem;
+    border-radius: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 430px;
+    background-color: white;
+    display: none;
+}
+.select-addons{
+    margin: 1rem;
+    margin-top: 2rem
+}
+.add-ons-h1 {
+    color: hsl(213, 96%, 18%);
+}
+.addons-details {
+    color:  #b8b7b7;
+    margin-bottom: 1.5rem;
+}
+.online-service {
+    margin-top: 1rem;
+    border: 1px solid #8a8484;
+    display: flex;
+    height: 4.5rem;
+    border-radius: 10px;
+    position: relative;
+}
+.online-service:has(#checkbox-online:checked) {
+    border: 1px solid hsl(243, 100%, 62%)
+
+;
+    background-color:  hsl(218, 100%, 97%);
+}
+.online-service:has(#checkbox-larger:checked) {
+    border: 1px solid hsl(243, 100%, 62%);
+    background-color:  hsl(218, 100%, 97%);
+}
+.online-service:has(#checkbox-customizable:checked) {
+    border: 1px solid hsl(243, 100%, 62%);
+    background-color:  hsl(218, 100%, 97%);
+}
+.checkbox {
+    margin-left: 1rem;
+    width: 25px;
+}
+.On-serv {
+    align-items: center;
+    margin-left: 1rem;
+    align-content: center;
+}
+.On-serv #span-1{
+    font-size: 1rem;
+    font-weight: bold;
+    color: hsl(213, 96%, 18%);
+}
+.On-serv #span-2 {
+    vertical-align: middle;
+    font-size: 0.9rem;
+    color: #b6b4b4;
+}
+.addons-price {
+    position: absolute;
+    right: 0.5rem;
+    margin-top: 1.5rem;
+    color: hsl(243, 100%, 62%);
+
+}
+
+/* section 4 */
+.section-4 {
+    position: absolute;
+    border-radius: 10px;
+    position: absolute;
+    top: 8rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 380px;
+    background-color: white;
+    display: none;
+}
+
+.finishing-up{
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+.finish-h2 {
+    color: hsl(213, 96%, 18%);
+}
+.finish-details {
+    color:  #b8b7b7;
+    margin-bottom: 1rem;
+}
+.card-details {
+    background-color: rgb(239, 241, 242);
+    height: 11rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-content: center;
+    border-radius: 10px;
+
+}
+.inner-details{
+    height: 10rem;
+    margin-left:1rem;
+    margin-right: 1rem;
+}
+.arcade-change{
+    margin-top: 1rem;
+    position: relative;
+    color: hsl(213, 96%, 18%);
+}
+.arcade-change span {
+    right: 0rem;
+    align-content: center;
+    position: absolute;
+    font-weight: bold;
+    top: 30%;
+}
+#link-change{
+    color:  #a1a0a0;
+}
+.online-serv {
+    margin-top: 1rem;
+    color:  #a1a0a0;
+    position: relative;
+}
+.online-serv span {
+    position: absolute;
+    right: 0rem;
+    color: hsl(213, 96%, 18%);
+}
+.large-storage{
+    position: relative;
+    margin-top: 1rem;
+    color:  #a1a0a0;
+}
+.custom-profile{
+    position: relative;
+    margin-top: 1rem;
+    color:  #a1a0a0;
+}
+.custom-profile span {
+    right: 0rem;
+    position: absolute;
+    color: hsl(213, 96%, 18%);
+}
+.large-storage span{
+    right: 0rem;
+    position: absolute;
+    color: hsl(213, 96%, 18%);
+}
+.underline {
+    margin-top: 0.6rem;
+    background-color:  #a1a0a0;
+    height: 1px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+.total {
+    position: relative;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color:  #a1a0a0;
+    margin-top: 0.5rem;
+}
+.total span {
+    color: hsl(243, 100%, 62%);
+    position: absolute;
+    right: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Section 5 message page  */
+
+.section-5 {
+    position: absolute;
+    border-radius: 10px;
+    position: absolute;
+    top: 8rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 500px;
+    background-color: white;
+    display: none;
+}
+
+.message-page {
+    margin: 2rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.message-page h1 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    color: hsl(213, 96%, 18%);
+}
+.message-page p {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #b6b4b4;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem; 
+  background: none; 
+}
+
+.nav-bar .step-1,
+.nav-bar .step-2,
+.nav-bar .step-3,
+.nav-bar .step-4 {
+  width: 2.5rem; /* Circle size */
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+  color:white; 
+  background-color: transparent; 
+  border: 1.5px solid  hsl(229, 24%, 87%); 
+  transition: all 0.3s ease; 
+}
+
+.nav-bar .step-1.active,
+.nav-bar .step-2.active,
+.nav-bar .step-3.active,
+.nav-bar .step-4.active {
+  background-color:  hsl(206, 94%, 87%); 
+  color:  hsl(231, 69%, 60%); 
+  border: none;
+}
+
+.attribution {
+    position: relative;
+    margin: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    color: #aea3a3;
+}
+.coder{
+    display: block;
+}
+
+.coder img{
+    border-radius: 50%;
+}
+
+}
+

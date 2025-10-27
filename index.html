@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="Card-section">
+            <img class="desktop-img" src="./assets/images/bg-sidebar-desktop.svg" alt="desktop image">
+            <img class="mobile-img" src="./assets/images/bg-sidebar-mobile.svg" alt="mobile image">
+            <nav class="nav-bar">
+               <div class="step-1">1</div>
+                <div class="step-2">2</div>
+                <div class="step-3">3</div>
+                <div class="step-4">4</div>
+            </nav>
+        </section>
+
+        <!-- Sections Cards -->
+        <section class="section-all">
+            <!-- section 1 -->
+            <article   class="section-1" id="section-1">
+                <div class="personal-info">
+                    <h1 class="info-h1">Personal info</h1>
+                    <h4 class="info-details"> Please provide your name, email address, and phone number.</h4>
+                        <!-- Inputs Forms-->
+                        <form action="submit" id="form">
+                 <div class="input-name">Name <span id="name-error"></span><br>
+                    <input type="text" placeholder="e.g Stephen King" id="name" >
+                </div>
+                      <div class="input-email">Email Address  <span id="email-error"></span><br>
+                    <input type="email" id="email" placeholder="e.g StephenKing@email.com" required></div>
+                          <div class="input-number">Phone Number  <span id="phone-error"></span><br>
+                    <input type="tel" id="number" placeholder="e.g +234 814 759 831" required minlength="10" maxlength="12"></div>
+                    </form>
+                    </div>
+            </article>
+
+            <!-- section 2 -->
+             <article class="section-2" id="section-2">
+                <div class="select-plan">
+                    <h2 class="plan-h2">Select your plan</h2>
+                    <h3 class="plan-details">You have the options of monthy or yearly billing</h3>
+                    <br>
+                    <div class="plans">
+                        <button class="Arcade" id="Arcade">
+                            <div id="image-arcade"> <img src="/multi-step-form-main/assets/images/icon-arcade.svg" alt=""></div>
+                            <div class="plan">  <span class="plan-name">Arcade</span>
+                            <span class="price" id="arcade-price">$9/mo</span>
+                            <span class="free" id="arcade-free">2 months free</span></div>
+                         
+                        </button>
+                        <br>
+                         <button class="Advance" id="Advance">
+                            <div id="img-advance"><img src="/multi-step-form-main/assets/images/icon-advanced.svg" alt=""></div>
+                            <div class="plan"><span class="plan-name">Advance</span>
+                            <span class="price" id="advance-price">$12/mo</span>
+                            <span class="free" id="advance-free">2 months free</span></div>
+                        </button>
+                        <br>
+                          <button class="Pro" id="Pro">
+                            <div id="img-pro"><img src="/multi-step-form-main/assets/images/icon-pro.svg" alt=""></div>
+                            <div class="plan"><span class="plan-name">Pro</span>
+                            <span class="price" id="pro-price">$15/mo</span>
+                            <span class="free" id="pro-free">2 months free</span></div>
+                        </button>
+                        <div class="billing-toggle">
+
+                            <span class="toggle-label" id="monthly-label">Monthly</span>
+ 
+                            <label class="switch">
+ 
+                                <input type="checkbox" id="billingSwitch">
+  
+                                <span class="slider"></span>
+ 
+                            </label>
+
+                            <span class="toggle-label" id="yearly-label">Yearly</span>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Section 3 -->
+            </article>
+            <article class="section-3" id="section-3">
+                <div class="select-addons">
+                    <h2 class="add-ons-h1">Pick add-ons</h2> <br>
+                    <h4 class="addons-details">Add-ons helps enhance your gaming experience</h4>
+                    <!-- Add checkbox phase -->
+                    <div class="online-service">
+
+                        <input type="checkbox" id="checkbox-online" class="checkbox">
+                        <div class="On-serv">   <span id="span-1">Online service</span><br>                    <span id="span-2">Access to multiplayer games </span></div>
+                        <span class="addons-price" id="online-price">+$1/mo</span>
+                    </div>
+                     <div class="online-service">
+
+                        <input type="checkbox" id="checkbox-larger" class="checkbox">
+                        <div class="On-serv">   <span id="span-1">Larger storage</span><br>                    <span id="span-2">Extra 1TB of cloud save </span></div>
+                        <span class="addons-price" id="larger-price">+$2/mo</span>
+                    </div>
+                     <div class="online-service">
+
+                        <input type="checkbox" id="checkbox-customizable" class="checkbox">
+                        <div class="On-serv">   <span id="span-1">Customizable profile</span><br>                    <span id="span-2">Custom theme on your profile </span></div>
+                        <span class="addons-price" id="customizable-price">+$2/mo</span>
+                    </div>
+                </div>
+            </article>
+            <!-- section 4 -->
+            <article class="section-4" id="section-4"> 
+                <div class="finishing-up">
+                    <h2 class="finish-h2">Finishing up</h2> <br>
+                    <h4 class="finish-details"> Double-check everything looks OK before confirming.</h4>
+                    <div class="card-details" id="card-details">
+                        <div class="inner-details">  
+                            <div class="arcade-change"><h4 id="selected-plan">Arcade (Monthly)</h4>
+                        <a href="#" id="link-change">Change</a>
+                    <span id="selected-plan-price">$9/mo</span></div>
+                        <div class="underline"></div>
+                         <h5 class="online-serv" id="online-service">Online service <span>+$1/mo</span></h5>
+                        <h5 class="large-storage" id="larger-storage">Larger storage <span>+$2/mo</span></h5>
+                          <h5 class="custom-profile" id="customizable-profile">Customizable profile <span>+$2/mo</span></h5>
+                    </div>
+                    </div>
+                    <br>
+                    <div class="total"><h5>Total(per month) <span>+$12/mo</span></h5></div>
+                </div>
+            </article>
+
+            <!-- Section 5 -->
+            <article class="section-5" id="section-5">
+                <div class="message-page">
+                    <img id="message-img" src="./assets/images/icon-thank-you.svg" alt="">
+                    <h1>Thank You!</h1>
+                    <p>
+  Thanks for confirming your subscription! We hope you have fun 
+  using our platform. If you ever need support, please feel free 
+  to email us at support@loremgaming.com.
+                    </p>
+                    
+                </div>
+                 <div class="attribution">
+                    <div class="mentor">
+                         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></div>
+                    <div class="coder">
+                        <p>Coded by </p><a href="https://x.com/IzzysPEpRena" target="_blank"><p>Izzy X</p></a>.
+                         <img src="./assets/images/imgi_1_E2CcOxRY_400x400.jpg" alt=""  width="50px">
+                    </div>
+  </div>
+            </article>
+        </section>
+
+        <!-- footer -->
+       <footer>
+            <div class="button-back-next">
+                <div><button disabled class="go-back" id="go-back">Go back</button></div>
+               <div>  <button disabled class="next" id="next-step">Next step</button></div>
+            </div>
+        </footer>
+    </main>
+
+</body>
+<script src="script.js"></script>
+</html>
