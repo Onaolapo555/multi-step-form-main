@@ -1126,6 +1126,9 @@ footer{
 /* Section 5 message page  */
 
 .section-5 {
+     margin: auto;
+     margin: 1rem;
+    inset: 0;
     position: absolute;
     border-radius: 10px;
     position: absolute;
@@ -1206,5 +1209,6 @@ footer{
 }
 
 }
+
 
 
