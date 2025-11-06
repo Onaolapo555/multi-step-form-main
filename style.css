@@ -639,7 +639,7 @@ input::placeholder{
 
 
 /* mobile design views  */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 824px) {
     
 body{
     width: 100vw;
@@ -814,11 +814,10 @@ footer{
 .Arcade,
  .Advance,
   .Pro{
-    margin-top: 0.5rem;
     width: 100%;
     align-items: center;
     display: flex;
-    height: 120px;
+    height: 5rem;
     border-radius: 10px;
     border: 1px solid #b6b4b4;
     background-color: transparent;
@@ -865,7 +864,7 @@ footer{
   align-items: center;
   justify-content: center;
   gap: 12px;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   background: #f8f9fe;
   padding: 15px 16px;
   border-radius: 10px;
@@ -1209,6 +1208,7 @@ footer{
 }
 
 }
+
 
 
 
